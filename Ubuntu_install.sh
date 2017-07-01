@@ -1,2 +1,13 @@
 #!/bin/bash
-#I3 setup script that installs all programs (that it can) and makes everything easier.
+# I3wm setup script that installs all programs (that it can) and makes everything easier.
+
+echo "This may take a while so please do be patience..."
+
+# Update system
+sudo apt-get update && sudo apt-get upgrade -y
+clear
+
+# Install all programs then logout
+sudo apt-get install i3 
+echo "See you on the other side and thank you!"
+gnome-session-quit
