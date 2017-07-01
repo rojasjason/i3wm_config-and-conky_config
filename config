@@ -156,3 +156,7 @@ bar {
         tray_output primary
 }
 
+# i3 Lock key bing
+bindsym $mod+shift+x exec i3lock
+
+
