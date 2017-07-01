@@ -9,5 +9,6 @@ clear
 
 # Install all programs then logout
 sudo apt-get install i3 
+sudo dpkg -i playerctl-0.5.0_amd64.deb
 echo "See you on the other side and thank you!"
 gnome-session-quit
