@@ -199,8 +199,8 @@ bar {
         tray_output primary
 }
 
-# i3 Lock key bing
-bindsym $mod+shift+x exec i3lock -fe -i /home/jason/i3wm_config-and-conky_config/glitch.jpg
+# i3 Lock key bind
+bindsym $mod+shift+x exec i3lock -fe --image="/home/jason/i3wm_config-and-conky_config/glitch.jpg"
 
 
 # MultiMedia Keys
