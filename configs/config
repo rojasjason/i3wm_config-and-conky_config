@@ -171,8 +171,8 @@ bindsym $mod+r mode "resize"
 # variables for window colors
 set $bg-color 	         #0C141F
 set $inactive-bg-color   #0C141F
-set $text-color          #E6FFFF
-set $inactive-text-color #6FC3DF
+set $text-color          #6FC3DF
+set $inactive-text-color #E6FFFF
 set $urgent-bg-color     #DF740C
 
 # window colors
@@ -186,6 +186,14 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # finds out, if available)
 bar {
         status_command i3status
+        colors {
+		background $bg-color
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color          $bg-color          $text-color
+		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
         tray_output primary
 }
 
