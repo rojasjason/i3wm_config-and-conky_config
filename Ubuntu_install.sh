@@ -58,6 +58,11 @@ sudo apt install neofetch -y
 #unzip atom-amd64.deb.zip
 #sudo dpkg --install atom-amd64.deb -y
 
+# Bomi Install
+sudo add-apt-repository ppa:darklin20/bomi
+sudo apt-get update
+sudo apt-get install bomi -y
+
 # i3 Gaps Repo Add (Last Step)
 
 # Make the folder
