@@ -197,7 +197,13 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
         tray_output primary
+	i3bar_command i3bar -t
 }
+
+# i3 Gaps size
+gaps inner 5
+gaps outer 5
+smart_gaps on
 
 # i3 Lock key bind
 bindsym $mod+shift+x exec i3lock -fe --image="/home/jason/i3wm_config-and-conky_config/glitch.jpg"
