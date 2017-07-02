@@ -1,6 +1,7 @@
 #!/bin/bash
 # i3wm setup script that installs all programs (that it can) and makes everything easier.
 
+rm i3wm_config-and-conky_config-master.zip
 echo "This may take a while so please do be patience..."
 
 # Update system
@@ -36,18 +37,19 @@ sudo apt-key add - < Release.key
 sudo apt-get update
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"
 sudo apt-get update
-sudo apt-get install arc-theme -y
+sudo apt-get install arc-theme -y --allow-unauthenticated
 
 # Moka Icon Theme
 sudo add-apt-repository ppa:moka/daily
 sudo apt-get update
 sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
+echo "Please push enter to continue installation."
 
 # Rofi Search Menu
 sudo apt-get install rofi -y
 
-# Setup i3Blocks
-mv /configs/i3blocks.conf ~/.config/i3/
+# Setup i3Blocks (retest)
+mv configs/i3blocks.conf ~/.config/i3/
 
 # Neofetch Install
 sudo add-apt-repository ppa:dawidd0811/neofetch
@@ -63,7 +65,7 @@ sudo add-apt-repository ppa:darklin20/bomi
 sudo apt-get update
 sudo apt-get install bomi -y
 
-# i3 Gaps Repo Add (Last Step)
+# i3 Gaps Repo Add (Last Step) (revisit)
 
 # Make the folder
 mkdir i3_gaps_repo
@@ -90,6 +92,6 @@ sudo add-apt-repository ppa:aguignard/ppa
 sudo apt-get update
 sudo apt-get install libxcb-xrm-dev -y
 
-# Logout
+# Logout (doesn't work, revisit)
 echo "See you on the other side and thank you!"
 gnome-session-quit
