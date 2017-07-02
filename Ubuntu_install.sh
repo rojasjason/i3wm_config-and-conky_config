@@ -46,6 +46,9 @@ sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
 # Rofi Search Menu
 sudo apt-get install rofi -y
 
+# Setup i3Blocks
+cp /etc/i3blocks.conf ~/.config/i3/
+
 # i3 Gaps Repo Add (Last Step)
 
 # Make the folder
