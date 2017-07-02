@@ -10,4 +10,6 @@ Personal Setup Configs
 7. Open lxappearance and choose the arc theme and logo theme.
 8. Customize Terminal to personal liking with font "VeraMono" and etc.
 9. Download CTLVisualizer from https://github.com/dpayne/cli-visualizer and follow instructions.
-. Press "Crtl+Shift+r" to reload your i3 then logout ("Crtl+Shift+e") and back in for extra measure.
+10. Find Atom on Github and follow instructions to download it.
+11. Press "Crtl+Shift+r" to reload your i3 then logout ("Crtl+Shift+e") and back in for extra measure.
+12. Configure what is left. (I think it is NeoFetch, i3Gaps/Blocks, Etc)
