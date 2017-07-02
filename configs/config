@@ -200,7 +200,7 @@ bar {
 }
 
 # i3 Lock key bing
-bindsym $mod+shift+x exec i3lock
+bindsym $mod+shift+x exec i3lock -fe -i /home/jason/i3wm_config-and-conky_config/glitch.jpg
 
 
 # MultiMedia Keys
@@ -229,3 +229,4 @@ exec compton
 exec gnome-terminal
 exec chromium-browser
 exec spotify
+i3wm_config-and-conky_config/
