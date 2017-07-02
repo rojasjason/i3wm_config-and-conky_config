@@ -23,6 +23,12 @@ sudo apt-get install spotify-client
 mkdir ~/.fonts
 mv fontawesome-webfont.ttf ~/.fonts/
 
+# Tron Fonts
+mv VeraMono.ttf ~/.fonts/
+mv VeraMoIt.ttf ~/.fonts/
+mv VeraMoBd.ttf ~/.fonts/
+mv VeraMoBI.ttf ~/.fonts/
+
 # Logout
 echo "See you on the other side and thank you!"
 gnome-session-quit
