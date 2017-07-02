@@ -43,29 +43,27 @@ sudo apt-get install arc-theme -y --allow-unauthenticated
 sudo add-apt-repository ppa:moka/daily
 sudo apt-get update
 sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
-echo "Please push enter to continue installation."
+
 
 # Rofi Search Menu
 sudo apt-get install rofi -y
 
-# Setup i3Blocks (retest)
-mv configs/i3blocks.conf ~/.config/i3/
+# Setup i3Blocks (should work now, retest)
+rm ~/.config/i3/i3blocks.conf
+mv configs/i3blocks.conf ~/.config/i3
 
-# Neofetch Install (add config file later)
+# Neofetch Install 
 sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt install neofetch -y
 
-# Atom Install (File too big)
-#unzip atom-amd64.deb.zip
-#sudo dpkg --install atom-amd64.deb -y
+# i3 Gaps Repo Add (Last Step) (updated code, revisit)
 
-# Bomi Install (can't find all packages)
-sudo add-apt-repository ppa:darklin20/bomi
+# i3 Gaps Required Programs
+sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev -y
+sudo add-apt-repository ppa:aguignard/ppa
 sudo apt-get update
-sudo apt-get install bomi -y
-
-# i3 Gaps Repo Add (Last Step) (revisit)
+sudo apt-get install libxcb-xrm-dev -y
 
 # Make the folder
 mkdir i3_gaps_repo
@@ -88,12 +86,5 @@ mkdir -p build && cd build/
 make
 sudo make install
 
-# i3 Gaps Required Programs
-sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev -y
-sudo add-apt-repository ppa:aguignard/ppa
-sudo apt-get update
-sudo apt-get install libxcb-xrm-dev -y
-
 # Logout (doesn't work, revisit)
-echo "See you on the other side and thank you!"
-gnome-session-quit
+echo "Please double check for any errors and logout for changes to apply. See you on the other side and thank you!"
