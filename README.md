@@ -10,4 +10,4 @@ Personal Setup Configs
 7. Download CTLVisualizer from https://github.com/dpayne/cli-visualizer and follow instructions. Then move their configs in to their config locations.
 8. Find Atom on Github and follow instructions to download it.
 9. Press "Crtl+Shift+r" to reload your i3 then logout ("Crtl+Shift+e") and back in for extra measure.
-10. Configure what is left. (I think it is NeoFetch, i3Gaps/Blocks, Etc)
+10. Configure what is left.
