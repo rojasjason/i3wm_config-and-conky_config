@@ -31,7 +31,7 @@ mv VeraMoIt.ttf ~/.fonts/
 mv VeraMoBd.ttf ~/.fonts/
 mv VeraMoBI.ttf ~/.fonts/
 
-# Arc Theme
+# Arc Theme (doesn't download by self)
 wget -nv http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key -O Release.key
 sudo apt-key add - < Release.key
 sudo apt-get update
@@ -51,7 +51,7 @@ sudo apt-get install rofi -y
 # Setup i3Blocks (retest)
 mv configs/i3blocks.conf ~/.config/i3/
 
-# Neofetch Install
+# Neofetch Install (add config file later)
 sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt install neofetch -y
@@ -60,7 +60,7 @@ sudo apt install neofetch -y
 #unzip atom-amd64.deb.zip
 #sudo dpkg --install atom-amd64.deb -y
 
-# Bomi Install
+# Bomi Install (can't find all packages)
 sudo add-apt-repository ppa:darklin20/bomi
 sudo apt-get update
 sudo apt-get install bomi -y
@@ -70,18 +70,20 @@ sudo apt-get install bomi -y
 # Make the folder
 mkdir i3_gaps_repo
 cd i3_gaps_repo
+sudo apt-get install git -y
 
 # clone the repository
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 
 # compile & install
+sudo apt install autoconf -y
 autoreconf --force --install
 rm -rf build/
 mkdir -p build && cd build/
 
 # Disabling sanitizers is important for release versions!
-# The prefix and sysconfdir are, obviously, dependent on the distribution.
+# The prefix and sysconfdir are, obviously, dependent on the distribution. (come back to this)
 ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make
 sudo make install
