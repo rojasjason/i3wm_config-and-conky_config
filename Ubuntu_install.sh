@@ -9,7 +9,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
 # Install all programs (in repos)
-sudo apt-get install i3 feh lxappearance ranger gnome-icon-theme-full
+sudo apt-get install i3 feh lxappearance ranger gnome-icon-theme-full compton
 
 # Playctl
 sudo dpkg -i playerctl-0.5.0_amd64.deb
