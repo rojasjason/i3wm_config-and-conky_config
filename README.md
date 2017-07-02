@@ -7,7 +7,7 @@ Personal Setup Configs
 4. Open Firefox and change theme to "Tron-ish"
 5. Open lxappearance and choose the arc theme and logo theme.
 6. Customize Terminal to personal liking with font with I-Beam, no custom font, custom color scheme with #6FC3DF as text color, #0C141F as background color, and Palette entry 11 as #E6FFFF
-7. Download CTLVisualizer from https://github.com/dpayne/cli-visualizer and follow instructions.
+7. Download CTLVisualizer from https://github.com/dpayne/cli-visualizer and follow instructions. Then move their configs in to their config locations.
 8. Find Atom on Github and follow instructions to download it.
 9. Press "Crtl+Shift+r" to reload your i3 then logout ("Crtl+Shift+e") and back in for extra measure.
 10. Configure what is left. (I think it is NeoFetch, i3Gaps/Blocks, Etc)
