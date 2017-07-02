@@ -49,8 +49,9 @@ sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
 sudo apt-get install rofi -y
 
 # Setup i3Blocks (should work now, retest)
-rm ~/.config/i3/i3blocks.conf
-mv configs/i3blocks.conf ~/.config/i3
+rm ~/.config/i3/config
+mv configs/i3blocks.conf ~/.config/i3/
+mv configs/config ~/.config/i3/
 
 # Neofetch Install 
 sudo add-apt-repository ppa:dawidd0811/neofetch
