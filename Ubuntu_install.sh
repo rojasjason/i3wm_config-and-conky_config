@@ -1,9 +1,10 @@
 #!/bin/bash
-# I3wm setup script that installs all programs (that it can) and makes everything easier.
+# i3wm setup script that installs all programs (that it can) and makes everything easier.
 
 echo "This may take a while so please do be patience..."
 
 # Update system
+echo "Please enter your password Below..."
 sudo apt-get update && sudo apt-get upgrade -y
 clear
 
@@ -37,10 +38,13 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/
 sudo apt-get update
 sudo apt-get install arc-theme -y
 
-#Moke Icon Theme
+# Moka Icon Theme
 sudo add-apt-repository ppa:moka/daily
 sudo apt-get update
 sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
+
+# Rofi Search Menu
+sudo apt-get install rofi -y
 
 # Logout
 echo "See you on the other side and thank you!"
