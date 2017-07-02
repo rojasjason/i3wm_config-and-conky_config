@@ -8,16 +8,20 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
 # Install all programs (in repos)
-sudo apt-get install i3 
+sudo apt-get install i3 feh
 
 # Playctl
 sudo dpkg -i playerctl-0.5.0_amd64.deb
-# Spotify
 
+# Spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 sudo apt-get install spotify-client
+
+# Font-Awesome
+mkdir ~/.fonts
+mv fontawesome-webfont.ttf ~/.fonts/
 
 # Logout
 echo "See you on the other side and thank you!"
