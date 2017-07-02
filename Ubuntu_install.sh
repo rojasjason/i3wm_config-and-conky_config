@@ -58,6 +58,10 @@ sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt install neofetch -y
 
+# Make cmatrix blue alias
+echo 'alias cmatrix="cmatrix -C cyan"' >> ~/.bashrc
+. ~/.bashrc
+
 # i3 Gaps Repo Add (Last Step) (updated code, revisit)
 
 # i3 Gaps Required Programs
