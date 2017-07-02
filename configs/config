@@ -236,4 +236,3 @@ exec compton
 exec gnome-terminal
 exec chromium-browser
 exec spotify
-i3wm_config-and-conky_config/
