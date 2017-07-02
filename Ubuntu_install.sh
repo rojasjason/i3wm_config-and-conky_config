@@ -49,6 +49,11 @@ sudo apt-get install rofi -y
 # Setup i3Blocks
 mv /configs/i3blocks.conf ~/.config/i3/
 
+# Neofetch Install
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt update
+sudo apt install neofetch -y
+
 # i3 Gaps Repo Add (Last Step)
 
 # Make the folder
