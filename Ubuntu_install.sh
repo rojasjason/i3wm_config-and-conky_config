@@ -8,7 +8,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
 # Install all programs (in repos)
-sudo apt-get install i3 feh
+sudo apt-get install i3 feh lxappearance
 
 # Playctl
 sudo dpkg -i playerctl-0.5.0_amd64.deb
