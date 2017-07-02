@@ -24,7 +24,7 @@ mkdir ~/.fonts
 mv fontawesome-webfont.ttf ~/.fonts/
 
 # Tron Fonts
-mv tronfonts/*VeraMono.ttf ~/.fonts/
+mv VeraMono.ttf ~/.fonts/
 mv VeraMoIt.ttf ~/.fonts/
 mv VeraMoBd.ttf ~/.fonts/
 mv VeraMoBI.ttf ~/.fonts/
