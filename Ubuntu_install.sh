@@ -54,8 +54,9 @@ sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt install neofetch -y
 
-# Atom Install
-sudo dpkg --install atom-amd64.deb -y
+# Atom Install (File too big)
+#unzip atom-amd64.deb.zip
+#sudo dpkg --install atom-amd64.deb -y
 
 # i3 Gaps Repo Add (Last Step)
 
