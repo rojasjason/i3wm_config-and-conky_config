@@ -8,4 +8,5 @@ Personal Setup Configs
 5. Open lxappearance, make any kind of change (it really doesn't matter what type of change as long as something is changed), then go to your home directory and type "ll" to find the ".gtkrc-2.0" file and then open it with nano (or your editor of choice), change the gtk-font-name to your font of choosing (in my case it is "VeraMono 8"). Now type "nano .config/gtk-3.0/settings.ini" and change the gtk-font-name to your font of choosing (VeraMono 8). Then restart lxapperance and it should appear as your choosen setting, just don't change it or else you have to start all over again.
 6. Open Firefox and change theme to "Tron-ish"
 7. Open lxappearance and choose the arc theme and logo theme.
+8. Customize Terminal to personal liking with font "VeraMono" and etc.
 . Press "Crtl+Shift+r" to reload your i3 then logout ("Crtl+Shift+e") and back in for extra measure.
