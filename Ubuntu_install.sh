@@ -9,7 +9,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
 # Install all programs (in repos)
-sudo apt-get install i3 feh lxappearance ranger gnome-icon-theme-full compton i3blocks libfftw3-dev libncursesw5-dev libpulse-dev
+sudo apt-get install i3 feh lxappearance ranger gnome-icon-theme-full compton i3blocks libfftw3-dev libncursesw5-dev libpulse-dev pulseaudio -y
 
 # Playctl
 sudo dpkg -i playerctl-0.5.0_amd64.deb
