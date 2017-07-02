@@ -187,8 +187,9 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+bar {	
+        #i3bar_command i3bar -t
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
         colors {
 		background $bg-color
 	    	separator #757575
@@ -198,13 +199,12 @@ bar {
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
         tray_output primary
-	#i3bar_command i3bar -t
 }
 
 # i3 Gaps size
-#gaps inner 5
-#gaps outer 5
-#smart_gaps on
+gaps inner 10
+gaps outer 10
+smart_gaps on
 
 # i3 Lock key bind
 bindsym $mod+shift+x exec i3lock -tfe --image="/home/jason/i3wm_config-and-conky_config-master/glitch.png"
@@ -236,3 +236,6 @@ exec compton
 exec gnome-terminal
 exec chromium-browser
 exec spotify
+
+# i3Gaps Workaround
+for_window [class="^.*"] border pixel 0
