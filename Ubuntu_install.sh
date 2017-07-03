@@ -10,7 +10,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
 # Install all programs (in repos)
-sudo apt-get install i3 feh cmatrix htop mpd lxappearance ranger chromium-browser gnome-icon-theme-full compton i3blocks libfftw3-dev libncursesw5-dev libpulse-dev pulseaudio -y
+sudo apt-get install i3 feh cmatrix tty-clock htop mpd lxappearance ranger chromium-browser gnome-icon-theme-full compton i3blocks libfftw3-dev libncursesw5-dev libpulse-dev pulseaudio -y
 
 # Playctl
 sudo dpkg -i playerctl-0.5.0_amd64.deb
@@ -31,7 +31,7 @@ mv VeraMoIt.ttf ~/.fonts/
 mv VeraMoBd.ttf ~/.fonts/
 mv VeraMoBI.ttf ~/.fonts/
 
-# Arc Theme (doesn't download by self)
+# Arc Theme 
 wget -nv http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key -O Release.key
 sudo apt-key add - < Release.key
 sudo apt-get update
@@ -48,23 +48,19 @@ sudo apt-get install moka-icon-theme faba-icon-theme faba-mono-icons -y
 # Rofi Search Menu
 sudo apt-get install rofi -y
 
-# Setup i3Blocks (should work now, retest)
-rm ~/.config/i3/config
-mv configs/i3blocks.conf ~/.config/i3/
-mv configs/config ~/.config/i3/
-
 # Neofetch Install 
 sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update
 sudo apt install neofetch -y
 
-# Make cmatrix blue alias
+# Make cmatrix blue alias and tty-clock
 echo 'alias cmatrix="cmatrix -C cyan"' >> ~/.bashrc
+echo 'alias tty-clock="tty-clock -ctC 6"' >> ~/.bashrc
 . ~/.bashrc
 
 # i3 Gaps Repo Add (Last Step) (updated code, revisit)
 
-# i3 Gaps Required Programs
+# i3 Gaps Required Programs solve this entire area
 sudo apt-get install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm-dev -y
 sudo add-apt-repository ppa:aguignard/ppa
 sudo apt-get update
@@ -86,7 +82,7 @@ rm -rf build/
 mkdir -p build && cd build/
 
 # Disabling sanitizers is important for release versions!
-# The prefix and sysconfdir are, obviously, dependent on the distribution. (come back to this)
+# The prefix and sysconfdir are, obviously, dependent on the distribution. (come back to this, need to solve)
 ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
 make
 sudo make install
